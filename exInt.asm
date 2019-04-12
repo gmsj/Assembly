@@ -17,17 +17,19 @@ configIVT: ; Label completamente desnecessária para configurar a IVT (pode ser 
     xor ax, ax
 	mov ds, ax
 	mov es, ax
-    mov di, 100h
-    mov word[di], int40h
-    mov word[di+2], 0
+    mov di, 100h ; Número da instrução * 4 para o deslocamento na IVT
+    mov word[di], int40h ; Salvando IP naquela posição de memória, onde (CS << 4 + IP) tem que resultar na posição de memória onde está a rotina de tratamento
+    mov word[di+2], 0 ; Salvando CS
     pop ds
     ret
 
 int40h: ; Criação da interrupção
     ; Como isso é apenas um exemplo, a rotina de tratamento é bem simples, nesse caso "chama" a label print_string
+    pusha ; Salvando contexto anterior
     mov si, string
     call print_string
-    iret
+    popa ; Restaurando contexto anterior
+    iret ; Retorno da interrupção
 
 print_string:
     lodsb
