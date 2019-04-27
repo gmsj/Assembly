@@ -1,9 +1,9 @@
 ; --------------------------------------------------------------;
-;																;
-;          		 Implementação do modo protegido				;
-;                   Autor: Gabriel Matheus						;
-;                       github.com/gmsj							;
-;																;
+;								;								;
+;          	Implementação do modo protegido			;
+;                   Autor: Gabriel Matheus			;
+;                       github.com/gmsj				;
+;								;								;
 ; --------------------------------------------------------------;
 
 ; Este arquivo deve ser renomeado e usado como kernel junto com os arquivos do bootloaderBase no mesmo repositório
