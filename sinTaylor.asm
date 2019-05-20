@@ -117,3 +117,4 @@ main:
 		push dword [result]		; Empilha o resultado pra o printf
 		call imprimir
 		add esp, 8				; Normaliza a pilha
+		
