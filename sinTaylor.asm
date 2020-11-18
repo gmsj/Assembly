@@ -1,10 +1,10 @@
 ; --------------------------------------------------------------;
-;								                                ;
-;          	     Exemplo de utilização de FPU                   ;
-;                  e integração C e assembly		            ;
+;								;
+;          	 Exemplo de utilização de FPU	                ;
+;                  e integração C e assembly		        ;
 ;                   Autor: Gabriel Matheus                      ;
 ;                       github.com/gmsj                         ;
-;								                                ;
+;								;
 ; --------------------------------------------------------------;
 
 ; Função para cálculo do valor do seno de um ângulo, a partir da série de Taylor
