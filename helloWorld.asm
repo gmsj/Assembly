@@ -1,3 +1,11 @@
+; --------------------------------------------------------------;
+;								                                ;
+;          	       Exemplo de um hello world       	            ;
+;                   Autor: Gabriel Matheus                      ;
+;                       github.com/gmsj                         ;
+;								                                ;
+; --------------------------------------------------------------;
+
 org 0x7c00        ; Endereço de memória em que o programa será carregado
 jmp 0x0000:start  ; Far jump - seta cs para 0
 
