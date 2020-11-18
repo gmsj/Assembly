@@ -1,3 +1,12 @@
+; --------------------------------------------------------------;
+;								;
+;          	 Exemplo de funções genéricas                   ;
+;             para operações triviais em assembly	        ;
+;                   Autor: Gabriel Matheus                      ;
+;                       github.com/gmsj                         ;
+;								;
+; --------------------------------------------------------------;
+
 org 0x7c00
 jmp 0x0000:start
 
